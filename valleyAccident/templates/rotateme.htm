@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>
+CSS Rotation
+</title>
+
+<style type="text/css">
+div {
+    background-color: black;
+    height: 400px;
+    width: 400px;
+    margin: 100px;
+}
+
+.rotate-me {
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-name: rotate;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+    0% {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(359deg);}
+}
+</style>
+</head>
+<body>
+
+<div class="rotate-me">&nbsp;</div>
+</body>
+</html>

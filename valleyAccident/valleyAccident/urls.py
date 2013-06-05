@@ -7,6 +7,9 @@ from accidentApp.views import *
 urlpatterns = patterns('',
     # Examples:
     url(r'^test/$', 'accidentApp.views.home', name='home'),
+    url(r'load_data/',load_data),
+    url(r'data/',my_data),
+    url(r'load_location/',place_coordinate),
     # url(r'^valleyAccident/', include('valleyAccident.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

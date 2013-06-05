@@ -1,0 +1,61 @@
+- model: accidentApp.Date
+  pk: 1
+  fields:
+    accident_day: 05
+    accident_month: 11
+    accident_year: 2070
+
+- model: accidentApp.Date
+  pk: 2
+  fields:
+    accident_day: 19
+    accident_month: 04
+    accident_year: 2070
+
+- model: accidentApp.Place
+  pk: 1
+  fields:
+    place_name: Kalimati
+    latitude: 84.98
+    longitude: 34.96
+
+
+- model: accidentApp.Place
+  pk: 2
+  fields:
+    place_name: Jadibuti
+    latitude: 85.98
+    longitude: 33.96
+
+- model: accidentApp.Vehicle
+  pk: 1
+  fields:
+    vehicle_name: Car
+
+- model: accidentApp.Vehicle
+  pk: 2
+  fields:
+    vehicle_name: Motorcycle
+
+- model: accidentApp.Accident
+  pk: 1
+  fields:
+    accident_date: 1
+    accident_hour: 09
+    accident_minute: 56
+    death_number: 1
+    injured_number: 3
+    vehicle: 2
+    place: 2
+
+
+- model: accidentApp.Accident
+  pk: 2
+  fields:
+    accident_date: 2
+    accident_hour: 19
+    accident_minute: 26
+    death_number: 3
+    injured_number: 8
+    vehicle: 1
+    place: 1
